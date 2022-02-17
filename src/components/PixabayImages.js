@@ -1,12 +1,16 @@
 import React from "react";
 import useImages from "../hooks/useImages";
 import Image from "./Image";
-import Skeleton from "./Skeleton";
+import Loader from "./Loader";
 
 const PixabayImages = () => {
   const { images, loadingImages } = useImages();
-  if (!loadingImages) {
-    return <Skeleton />;
+  if (loadingImages) {
+    return (
+      <div className="flex items-center justify-center mt-32">
+        <Loader />
+      </div>
+    );
   }
   return (
     <div className="flex justify-center flex-wrap mt-12">

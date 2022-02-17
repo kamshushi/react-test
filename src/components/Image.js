@@ -4,7 +4,7 @@ const Image = ({ image }) => {
   const { largeImageURL, tags, pageURL } = image;
   const tagsArray = tags?.split(", ").slice(0, 2) || [];
   return (
-    <div className="w-64 mx-3">
+    <div className="w-96 mx-3 sm:w-80 lg:w-72">
       <div className="bg-gray-50 md:bg-white md:shadow-xl rounded-lg mb-6 ">
         <div className="md:flex-shrink-0">
           <img
