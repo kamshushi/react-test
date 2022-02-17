@@ -16,7 +16,7 @@ const SearchBar = () => {
         <div class="relative">
           <input
             type="text"
-            class="h-14 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none"
+            class="h-10 w-4/5 pr-8 py-6 mt-10 pl-5 rounded z-0 focus:shadow focus:outline-none"
             placeholder="Search For An Image..."
           />
         </div>
