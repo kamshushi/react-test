@@ -1,6 +1,7 @@
 import "./App.css";
 import Container from "./components/Container";
 import PixabayImages from "./components/PixabayImages";
+import Plaiceholder from "./components/Plaiceholder";
 import SearchBar from "./components/SearchBar";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Container>
         <SearchBar />
         <PixabayImages />
+        {/* <Plaiceholder /> */}
       </Container>
     </div>
   );
