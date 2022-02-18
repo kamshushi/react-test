@@ -13,13 +13,13 @@ const PixabayImages = () => {
     );
   }
   return (
-    <div className="flex justify-center flex-wrap mt-12">
+    <main className="flex justify-center flex-wrap mt-12">
       {images.length > 0 ? (
         images.map((image) => <Image key={image.id} image={image} />)
       ) : (
         <h1>No Images found</h1>
       )}
-    </div>
+    </main>
   );
 };
 

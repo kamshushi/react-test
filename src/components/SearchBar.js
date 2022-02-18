@@ -5,7 +5,7 @@ import useImages from "../hooks/useImages";
 const SearchBar = () => {
   const { searchTerm, setSearchTerm } = useSearch();
   return (
-    <div>
+    <header>
       <div>
         <div className="relative">
           <input
@@ -17,7 +17,7 @@ const SearchBar = () => {
           />
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
